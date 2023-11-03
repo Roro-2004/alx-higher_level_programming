@@ -2,6 +2,6 @@
 if __name__ == "__main__":
     import hidden_4
 
-    for ind in range(hidden_4):
+    for ind in dir(hidden_4):
         if ind[:2] != "__":
             print(ind)
