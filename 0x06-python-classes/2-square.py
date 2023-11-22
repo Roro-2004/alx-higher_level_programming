@@ -6,9 +6,8 @@ class Square:
     """cerate a class"""
 
     def __init__(self, size=0):
-        """ 
+        """
     constructor.
-    
         Args:
             size: size of sqaure
 
