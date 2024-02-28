@@ -9,6 +9,7 @@ class Rectangle:
                print_symbol var that stores a rep for the rectangle"""
     number_of_instances = 0
     print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """Constructor for Rectangle
            Takes two values to intiate the width and height
@@ -63,14 +64,17 @@ class Rectangle:
 
     def __str__(self):
         """prints the representation of rectangle"""
-        str = ""
+        strr = ""
         if (self.__height != 0 and self.__width != 0):
             for i in range(self.__height):
                 for j in range(self.__width):
-                    str += self.print_symbol
+                    if isinstance(self.print_symbol, int):
+                        strr += str(self.print_symbol)
+                    else:
+                        strr += self.print_symbol
                 if (i != self.__height - 1):
-                    str += "\n"
-        return str
+                    strr += "\n"
+        return strr
 
     def __repr__(self):
         """print the rectangle format"""
@@ -80,4 +84,3 @@ class Rectangle:
         """print bye to deleted rectangle"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
