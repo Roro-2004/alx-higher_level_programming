@@ -55,7 +55,7 @@ class Rectangle:
 
     def perimeter(self):
         """calc the premiter"""
-        if((self.__height == 0) or (self.__width == 0)):
+        if ((self.__height == 0) or (self.__width == 0)):
             return 0
         else:
             return ((self.__height + self.__width) * 2)
@@ -63,11 +63,11 @@ class Rectangle:
     def __str__(self):
         """prints the representation of rectangle"""
         str = ""
-        if(self.__height != 0 and self.__width != 0):
+        if (self.__height != 0 and self.__width != 0):
             for i in range(self.__height):
                 for j in range(self.__width):
                     str += "#"
-                if(i != self.__height - 1):
+                if (i != self.__height - 1):
                     str += "\n"
         return str
 
