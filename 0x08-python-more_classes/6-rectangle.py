@@ -5,7 +5,9 @@
 class Rectangle:
     number_of_instances = 0
 
-    """A Rectangle"""
+    """A Rectangle
+       Arguments:
+               number_of_instances var that counts the no of objects"""
     def __init__(self, width=0, height=0):
         """Constructor for Rectangle
            Takes two values to intiate the width and height
