@@ -65,8 +65,7 @@ class Rectangle:
                 if(i != self.__height - 1):
                     str += "\n"
         return str
- 
+
     def __repr__(self):
         """print the rectangle format"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-    

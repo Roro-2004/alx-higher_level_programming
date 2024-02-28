@@ -3,7 +3,9 @@
 
 
 class Rectangle:
-    """A Rectangle"""
+    """A Rectangle
+       Arguments:
+            calc the no of attributes in class"""
     def __init__(self, width=0, height=0):
         """Constructor for Rectangle
            Takes two values to intiate the width and height

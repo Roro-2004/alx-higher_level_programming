@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """This is a Rectangle Class"""
 
@@ -15,12 +14,10 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def width(self):
         """A getter for the width of the rectangle"""
         return self.__width
-
 
     @width.setter
     def width(self, value):
@@ -32,12 +29,10 @@ class Rectangle:
         else:
             self.__width = value
 
-
     @property
     def height(self):
         """A getter for the height of the rectangle"""
         return self.__height
-
 
     @height.setter
     def height(self, value):
